@@ -1,0 +1,23 @@
+.stats {
+  background: #2b1e16;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  color: #d8b08c;
+}
+
+.stat-box p {
+  color: #f7f2ec;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

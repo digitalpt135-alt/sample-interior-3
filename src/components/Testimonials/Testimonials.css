@@ -1,0 +1,51 @@
+.testimonials {
+  background: #f7f2ec;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollTestimonials 25s linear infinite;
+}
+
+.testimonial-slider:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+.testimonial-card {
+  width: 360px;
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(43, 30, 22, 0.1);
+}
+
+.testimonial-card h3 {
+  color: #d8b08c;
+  margin-bottom: 12px;
+}
+
+.testimonial-card p {
+  color: #6b584b;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.testimonial-card span {
+  font-weight: 600;
+}
+
+@keyframes scrollTestimonials {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

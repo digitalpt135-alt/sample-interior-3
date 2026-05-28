@@ -1,0 +1,46 @@
+.footer {
+  background: #0b0b0b;
+  color: white;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 45px;
+}
+
+.footer h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer h3 {
+  color: #b68a5b;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer p,
+.footer a {
+  color: #d0d0d0;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.footer a {
+  display: block;
+  transition: 0.35s ease;
+}
+
+.footer a:hover {
+  color: #b68a5b;
+  transform: translateX(5px);
+}
+
+@media (max-width: 900px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,127 @@
+.hero {
+  min-height: 88vh;
+  position: relative;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 8% 90px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transform-origin: center center;
+  transition: transform 0.18s ease-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(245,241,235,0.18),
+    rgba(245,241,235,0.04),
+    rgba(0,0,0,0.05)
+  );
+
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 780px;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content span {
+  color: #d4a373;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 92px;
+  line-height: 0.9;
+  font-weight: 500;
+  margin: 22px 0;
+}
+
+.hero-content h1 em {
+  display: block;
+  color: #d4a373;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero-content p {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 34px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-buttons a {
+  background: #ffffff;
+  color: #111;
+  padding: 15px 34px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.hero-buttons a:hover {
+  background: #d4a373;
+  color: #111;
+  transform: translateY(-5px);
+}
+
+.hero-buttons .outline-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.hero-buttons .outline-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 85vh;
+    padding: 0 5% 70px;
+  }
+
+  .hero-bg {
+    background-position: center center;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+}
